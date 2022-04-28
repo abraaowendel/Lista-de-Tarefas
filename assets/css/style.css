@@ -23,7 +23,7 @@ body{
     background-color: var(--main-color);
 }
 .container{
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
     padding: 30px 20px;
