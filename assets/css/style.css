@@ -23,7 +23,8 @@ body{
     background-color: var(--main-color);
 }
 .container{
-    max-width: 500px;
+    max-width: 600px;
+    min-height: 100vh;
     margin: auto;
     text-align: center;
     padding: 30px 20px;
@@ -33,7 +34,6 @@ body{
     display: flex;
     align-items: center;
 }
-
 .box{
     flex-direction: column;
     width: 100%;
@@ -45,7 +45,6 @@ body{
     font-weight: 600;
     margin-top: 10px;
     border: 1px solid var(--text-color);
-
 }
 .box__item:hover,
 .box__item:hover > div{
@@ -66,7 +65,6 @@ input[type = checkbox] {
     margin-right: 30px;    
     transform: scale(1.6);
 }
-
 input[type = button]{
     position:absolute;
     right: 20px;
@@ -100,3 +98,19 @@ input[type = button]:hover{
 .box__new-item input::placeholder{
     color: #fff;
 }
+ @media (max-width: 600px){
+    .container{
+        padding: 25px;
+    }
+    .box__new-item input, .box__item{
+        padding: 15px;
+    }
+    input[type = checkbox]{
+        margin-right: 20px;
+        transform: scale(1.4);
+    }
+    .box__item div{
+        font-size: 1em;
+    }
+   
+ }
