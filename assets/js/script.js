@@ -16,7 +16,7 @@ const inserirItem = (event) => {
      if(event.key === 'Enter'){
         let tarefa = event.target.value;
         const banco = getBanco();
-        banco.push({tarefa: `${tarefa.toUpperCase()}`, status: ""})
+        banco.push({tarefa: `${tarefa}`, status: ""})
         sendBanco(banco)
         limparConteudo();
         atualizarTela();
